@@ -16,3 +16,12 @@ function plus(a: number, b: number): number {
 }
 sum(10, 20);  // 30
 sum(10, 20, 30)  // 불필요한 30인자를 넣었다고 나옵니다.  함수의 파라미터를 제한하는 특성 입니다.
+
+// 함수의 옵셔널 파라미터(선택적 파라미터)
+// 인자 뒤에 '?'을 붙이면 됩니다.
+function log(a: string, b?: string) {
+
+}
+
+log('hello world');
+log('hello ts')ㄴ;
