@@ -54,3 +54,21 @@ function logTextLength<T extends LengthType>(text: T): T {
 
 logTextLength('hi');
 logTextLength({leng: 10});
+
+
+// 제네릭 타입 제한 3 - keyof
+interface ShoppingItem {
+    name: string;
+    price: number;
+    stock: number;
+}
+
+
+function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T {
+    return itemOption;
+}
+
+// getShoppingItemOption(10);
+// getShoppingItemOption<string>('a');
+
+getShoppingItemOption( 'name' );
