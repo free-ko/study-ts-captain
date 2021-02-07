@@ -31,3 +31,12 @@ interface Dropdown<T> {
 }
 
 const obj: Dropdown<number> = { value: 10, selected: false };
+
+
+// 제네릭의 타입 제한
+function logTextLength<T>(text: T[] ): T[] {
+    console.log(text.length);
+    return text;
+}
+
+logTextLength<string>(['hi','123']);
