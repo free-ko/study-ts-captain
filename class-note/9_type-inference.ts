@@ -36,4 +36,5 @@ let detailedItem: DetailedDropdown<string> = {
 }
 
 // Best Common Type  - 타입스크립트가 타입을 메기는 알고리즘
+// 모든 타입을 UION으로 묶는 것
 let arr = [1, 2, true, 'a'];
