@@ -34,3 +34,6 @@ let detailedItem: DetailedDropdown<string> = {
     value: 'a',
     tag: 'a'
 }
+
+// Best Common Type  - 타입스크립트가 타입을 메기는 알고리즘
+let arr = [1, 2, true, 'a'];
